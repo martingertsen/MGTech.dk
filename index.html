@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" id="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+        <title>MG tech</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <style media="screen">
+            * { box-sizing:border-box; }
+            html, body { height:100%; padding:0; margin:0; font-family:'Poppins'; color:#231f20; position:relative; }
+            body { display:grid; grid-template-columns:50% 50%; }
+            .blue { color:#95b5d5; }
+
+            .left { background:#fff; padding:64px; align-self: center; position:relative; }
+            .left:after { content:''; position:absolute; top:50%; left:100%; margin-top:-81px; width:76px; height:162px; background: url('bang.png') no-repeat center center; background-size:cover; z-index:2; }
+            .right { background: url('bg.jpg') no-repeat center center; background-size:cover; position:relative; }
+            .right:after { content:''; position:absolute; top:0; left:0; width:100%; height:100%; z-index:1; background:#95b5d5; opacity:.66; }
+
+            .logo { position:absolute; left:64px; top:64px; width:50%; font-size:32px; font-weight:700; cursor:pointer; }
+            .footer { width:50%; padding:0 64px; position:absolute; left:0; bottom:64px; font-size:12px; font-weight:300; color:#888; }
+            .footer .bull { display:none; }
+
+            h1 { font-size:42px; line-height:42px; margin:0; display:inline-block; }
+            h4 { line-height:20px; margin:10px 0; display:inline-block; text-transform:uppercase; }
+            a { color:inherit; }
+
+            button { background:#95b5d5; color:#fff; font-size:16px; font-weight:700; border:0; padding:16px 20px; margin:16px 0; display:inline-block; outline:none; cursor:pointer; }
+
+            @media screen and (max-width: 960px) {
+                h1 { font-size:32px; line-height:32px; }
+                h4 { font-size:14px; line-height:14px; }
+                .footer, button { font-size:12px; }
+                .footer br { display:none; }
+                .footer .bull { display:inline-block; }
+            }
+
+            @media screen and (max-width: 640px) {
+                body { display:block; }
+                .left { display:block; height:50%; }
+                .left:after { display:none; }
+                .right { display:block; height:50%; }
+                .logo { left:32px; top:32px; }
+                .left { padding:32px; }
+                h1 { font-size:24px; line-height:24px; }
+                h4 { font-size:12px; line-height:12px; }
+                .footer { width:100%; padding:32px; bottom:50%; font-size:8px; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="logo animate__animated animate__fadeInDown" onclick="window.location.reload();"><span class="blue">MG</span>tech</div>
+        <div class="left">
+            <h4 class="blue animate__animated animate__fadeInLeft">Web-designer & -konsulent</h4>
+            <h1 class="animate__animated animate__fadeInLeft">Jeg bygger websites med <u>gennemslagskraft</u></h1>
+            <button class="animate__animated animate__fadeInLeft" type="button" onclick="window.open('mailto:info@mgtech.dk');">Skal vi tage en snak?</button>
+        </div>
+        <div class="footer">
+            Lundsager 20, 5540 Ullerslev &nbsp; &bull; &nbsp; <a href="mailto:info@mgtech.dk">info@mgtech.dk</a> &nbsp; &bull; &nbsp; <a href="tel:51808323">5180 8323</a><br><span class="bull"> &nbsp; &bull; &nbsp; </span>
+            CVR: 2822 8848 &nbsp; &bull; &nbsp; Copyright &copy; 2012 - Alle rettigheder forbeholdes
+        </div>
+        <div class="right">
+        </div>
+    </body>
+</html>
